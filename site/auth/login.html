@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>เข้าสู่ระบบ — อู่ป้าแดงบริการ</title>
+<link rel="stylesheet" href="../shared/style.css">
+<style>
+  .authwrap{ min-height:100vh; display:flex; align-items:center; justify-content:center; padding:40px 20px; }
+  .authbox{ width:100%; max-width:460px; }
+  .authcard{ padding:34px 32px; }
+  .brand-center{ display:flex; justify-content:center; margin-bottom:22px; }
+  .divider-or{ display:flex; align-items:center; gap:12px; margin:18px 0; color:var(--ink-faint); font-size:13px; }
+  .divider-or::before,.divider-or::after{ content:""; flex:1; height:1px; background:var(--border); }
+  .google-btn{ display:flex; align-items:center; justify-content:center; gap:10px; }
+</style>
+</head>
+<body>
+<div class="authwrap">
+  <div class="authbox">
+    <div class="brand-center">
+      <div class="brand"><span class="mark">อู่</span> อู่ป้าแดงบริการ</div>
+    </div>
+
+    <div class="card authcard">
+      <div class="eyebrow">เข้าสู่ระบบ</div>
+      <h1>ยินดีต้อนรับกลับมา</h1>
+      <p>เลือกสิทธิ์การใช้งานและกรอกข้อมูลเพื่อเข้าสู่ระบบ</p>
+
+      <div class="field" style="margin-top:18px;">
+        <label>เข้าสู่ระบบในฐานะ</label>
+        <div class="role-pick">
+          <div class="role-card selected">
+            <div class="ic">🙋</div>
+            <div style="font-weight:600;">ลูกค้า</div>
+            <div class="muted" style="font-size:12px;">Customer</div>
+          </div>
+          <div class="role-card">
+            <div class="ic">🔧</div>
+            <div style="font-weight:600;">ช่างซ่อม</div>
+            <div class="muted" style="font-size:12px;">Mechanic</div>
+          </div>
+          <div class="role-card">
+            <div class="ic">🗂️</div>
+            <div style="font-weight:600;">ผู้ดูแลระบบ</div>
+            <div class="muted" style="font-size:12px;">Admin</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="email">อีเมล หรือ เบอร์โทรศัพท์</label>
+        <input type="text" id="email" placeholder="[email protected]">
+      </div>
+      <div class="field">
+        <label for="pass">รหัสผ่าน</label>
+        <input type="password" id="pass" placeholder="••••••••">
+        <div class="hint"><a href="#" style="color:var(--brown);" onclick="alert('ตัวอย่างการใช้งาน: ระบบจะส่งลิงก์สำหรับตั้งรหัสผ่านใหม่ไปยังอีเมลที่ลงทะเบียนไว้'); return false;">ลืมรหัสผ่าน?</a></div>
+      </div>
+
+      <button class="btn btn-primary btn-block">เข้าสู่ระบบ</button>
+
+      <div class="divider-or">หรือ</div>
+      <button class="btn btn-outline btn-block google-btn">
+        <span>🔵</span> เข้าสู่ระบบด้วย Google
+      </button>
+
+      <p style="text-align:center; margin-top:20px; font-size:14px;">
+        ยังไม่มีบัญชี? <a href="register.html" style="color:var(--brown); font-weight:600;">สมัครสมาชิก</a>
+      </p>
+    </div>
+    <p class="footer-note">© อู่ป้าแดงบริการ — ระบบจัดการอู่ซ่อมรถ</p>
+  </div>
+</div>
+</body>
+</html>

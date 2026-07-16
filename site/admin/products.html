@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>จัดการสินค้า — อู่ป้าแดงบริการ</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">อู่</span> อู่ป้าแดงบริการ</div>
+    <div class="sec-label">ภาพรวม</div>
+    <a href="dashboard.html"><span class="dot"></span> แดชบอร์ด</a>
+    <div class="sec-label">จัดการ</div>
+    <a href="members.html"><span class="dot"></span> สมาชิกและช่าง</a>
+    <a href="bookings.html"><span class="dot"></span> การจอง</a>
+    <a href="services.html"><span class="dot"></span> บริการ</a>
+    <a href="products.html" class="active"><span class="dot"></span> สินค้า</a>
+    <a href="promotions.html"><span class="dot"></span> โปรโมชั่น</a>
+    <a href="payments.html"><span class="dot"></span> การชำระเงิน</a>
+    <div class="sec-label">ข้อมูล</div>
+    <a href="reports.html"><span class="dot"></span> รายงาน</a>
+    <div class="foot">เข้าสู่ระบบในฐานะ<br><strong style="color:#F5E9CF;">ผู้ดูแลระบบ</strong></div>
+  </aside>
+
+  <div class="content">
+    <div class="topbar">
+      <div><div class="eyebrow">จัดการคลังสินค้า</div><h2 style="margin-top:2px;">สินค้าและหมวดหมู่</h2></div>
+      <button class="btn btn-primary">+ เพิ่มสินค้าใหม่</button>
+    </div>
+
+    <div class="content-body">
+      <div class="navlinks" style="justify-content:flex-start; gap:6px; margin-bottom:18px; background:var(--surface); display:inline-flex; padding:6px; border-radius:999px; border:1px solid var(--border);">
+        <a href="#" class="active" onclick="this.parentElement.querySelectorAll('a').forEach(a=>a.classList.remove('active'));this.classList.add('active');return false;">สินค้าทั้งหมด</a>
+        <a href="#" onclick="this.parentElement.querySelectorAll('a').forEach(a=>a.classList.remove('active'));this.classList.add('active');return false;">หมวดหมู่สินค้า</a>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <tr><th>สินค้า</th><th>หมวดหมู่</th><th>ราคา</th><th>คงเหลือ</th><th>สถานะ</th><th></th></tr>
+          <tr><td>น้ำมันเครื่องสังเคราะห์แท้ 5W-30</td><td>น้ำมันเครื่อง</td><td>590 บาท</td><td>34</td><td><span class="badge">วางขาย</span></td>
+            <td><button class="btn btn-outline btn-sm">แก้ไข</button> <button class="btn btn-ghost btn-sm">ลบ</button></td></tr>
+          <tr><td>ยางรถยนต์ 185/65R15</td><td>ยางรถยนต์</td><td>1,990 บาท</td><td>18</td><td><span class="badge">วางขาย</span></td>
+            <td><button class="btn btn-outline btn-sm">แก้ไข</button> <button class="btn btn-ghost btn-sm">ลบ</button></td></tr>
+          <tr><td>แบตเตอรี่รถยนต์ 45 แอมป์</td><td>แบตเตอรี่</td><td>2,290 บาท</td><td>7</td><td><span class="badge">วางขาย</span></td>
+            <td><button class="btn btn-outline btn-sm">แก้ไข</button> <button class="btn btn-ghost btn-sm">ลบ</button></td></tr>
+          <tr><td>ผ้าเบรกหน้า สำหรับรถเก๋ง</td><td>ผ้าเบรก</td><td>850 บาท</td><td>0</td>
+            <td><span class="badge" style="background:var(--st-cancel-bg); color:var(--st-cancel-ink);">สินค้าหมด</span></td>
+            <td><button class="btn btn-outline btn-sm">แก้ไข</button> <button class="btn btn-ghost btn-sm">ลบ</button></td></tr>
+        </table>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:24px; align-items:flex-start;">
+        <div class="card">
+          <h3>เพิ่ม / แก้ไขสินค้า</h3>
+          <div class="field" style="margin-top:12px;"><label>ชื่อสินค้า</label><input type="text" placeholder="ชื่อสินค้า"></div>
+          <div class="row-2">
+            <div class="field">
+              <label>หมวดหมู่</label>
+              <select><option>น้ำมันเครื่อง</option><option>ยางรถยนต์</option><option>แบตเตอรี่</option><option>ผ้าเบรก</option><option>อุปกรณ์ตกแต่ง</option></select>
+            </div>
+            <div class="field"><label>ราคา (บาท)</label><input type="number" placeholder="0"></div>
+          </div>
+          <div class="field"><label>จำนวนคงเหลือ</label><input type="number" placeholder="0"></div>
+          <div class="field"><label>รูปภาพสินค้า</label><input type="file"></div>
+          <button class="btn btn-primary">บันทึกสินค้า</button>
+        </div>
+        <div class="card">
+          <h3>จัดการหมวดหมู่สินค้า</h3>
+          <div class="field" style="margin-top:12px; display:flex; gap:10px;">
+            <input type="text" placeholder="ชื่อหมวดหมู่ใหม่">
+            <button class="btn btn-outline">เพิ่ม</button>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:8px; margin-top:6px;">
+            <div style="display:flex; justify-content:space-between; padding:10px 12px; background:var(--bg-soft); border-radius:var(--radius-s);">น้ำมันเครื่อง <button class="btn btn-ghost btn-sm">ลบ</button></div>
+            <div style="display:flex; justify-content:space-between; padding:10px 12px; background:var(--bg-soft); border-radius:var(--radius-s);">ยางรถยนต์ <button class="btn btn-ghost btn-sm">ลบ</button></div>
+            <div style="display:flex; justify-content:space-between; padding:10px 12px; background:var(--bg-soft); border-radius:var(--radius-s);">แบตเตอรี่ <button class="btn btn-ghost btn-sm">ลบ</button></div>
+            <div style="display:flex; justify-content:space-between; padding:10px 12px; background:var(--bg-soft); border-radius:var(--radius-s);">ผ้าเบรก <button class="btn btn-ghost btn-sm">ลบ</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

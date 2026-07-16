@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ประวัติการชำระเงิน — อู่ป้าแดงบริการ</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body class="page">
+
+<header class="topnav">
+  <div class="container">
+    <div class="brand"><span class="mark">อู่</span> อู่ป้าแดงบริการ</div>
+    <nav class="navlinks">
+      <a href="index.html">หน้าหลัก</a>
+      <a href="promotions.html">โปรโมชั่น</a>
+      <a href="booking.html">จองคิวซ่อม</a>
+      <a href="products.html">สินค้า</a>
+      <a href="booking-history.html" class="active">ประวัติของฉัน</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="cart.html" class="btn btn-ghost">🛒 ตะกร้า</a>
+      <a href="profile.html" class="avatar">ส</a>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container">
+    <div class="eyebrow">ประวัติของฉัน</div>
+    <h1>ประวัติการชำระเงิน</h1>
+
+    <div class="navlinks" style="justify-content:flex-start; gap:6px; margin:14px 0 22px; background:var(--surface); display:inline-flex; padding:6px; border-radius:999px; border:1px solid var(--border);">
+      <a href="booking-history.html">การจองคิวซ่อม</a>
+      <a href="repair-history.html">ประวัติการซ่อม</a>
+      <a href="order-history.html">ประวัติการสั่งซื้อ</a>
+      <a href="payment-history.html" class="active">ประวัติการชำระเงิน</a>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <tr><th>เลขที่ใบเสร็จ</th><th>ประเภท</th><th>วันที่ชำระ</th><th>ช่องทาง</th><th>ยอดชำระ</th><th>สถานะ</th><th></th></tr>
+        <tr>
+          <td>#PM-00982</td><td>ค่าซ่อม</td><td>15 ก.ค. 2569</td><td>โอนเงิน</td><td>2,200 บาท</td>
+          <td><span class="stamp review">รอตรวจสอบ</span></td>
+          <td><button class="btn btn-outline btn-sm" disabled style="opacity:.5; cursor:not-allowed;" title="ใบเสร็จจะออกให้อัตโนมัติหลังตรวจสอบการชำระเงินเรียบร้อย">ดูใบเสร็จ</button></td>
+        </tr>
+        <tr>
+          <td>#PM-00975</td><td>ค่าสินค้า</td><td>8 ก.ค. 2569</td><td>โอนเงิน</td><td>2,080 บาท</td>
+          <td><span class="stamp done">ชำระแล้ว</span></td>
+          <td><a href="payment-receipt-00975.html" class="btn btn-outline btn-sm">ดูใบเสร็จ</a></td>
+        </tr>
+        <tr>
+          <td>#PM-00921</td><td>ค่าซ่อม</td><td>2 มิ.ย. 2569</td><td>ชำระที่ร้าน</td><td>5,200 บาท</td>
+          <td><span class="stamp done">ชำระแล้ว</span></td>
+          <td><a href="payment-receipt-00921.html" class="btn btn-outline btn-sm">ดูใบเสร็จ</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</main>
+
+<p class="footer-note">© อู่ป้าแดงบริการ — ระบบจัดการอู่ซ่อมรถ</p>
+</body>
+</html>

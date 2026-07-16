@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>สมัครสมาชิก — อู่ป้าแดงบริการ</title>
+<link rel="stylesheet" href="../shared/style.css">
+<style>
+  .authwrap{ min-height:100vh; display:flex; align-items:center; justify-content:center; padding:40px 20px; }
+  .authbox{ width:100%; max-width:480px; }
+  .authcard{ padding:34px 32px; }
+  .brand-center{ display:flex; justify-content:center; margin-bottom:22px; }
+  .divider-or{ display:flex; align-items:center; gap:12px; margin:18px 0; color:var(--ink-faint); font-size:13px; }
+  .divider-or::before,.divider-or::after{ content:""; flex:1; height:1px; background:var(--border); }
+</style>
+</head>
+<body>
+<div class="authwrap">
+  <div class="authbox">
+    <div class="brand-center">
+      <div class="brand"><span class="mark">อู่</span> อู่ป้าแดงบริการ</div>
+    </div>
+
+    <div class="card authcard">
+      <div class="eyebrow">สมัครสมาชิก</div>
+      <h1>สร้างบัญชีใหม่</h1>
+      <p>สมัครสมาชิกเพื่อจองคิวซ่อมรถและสั่งซื้อสินค้าได้ง่ายขึ้น</p>
+
+      <button class="btn btn-outline btn-block" style="margin-top:16px; display:flex; justify-content:center; gap:10px;">
+        <span>🔵</span> สมัครด้วยบัญชี Google
+      </button>
+      <div class="divider-or">หรือกรอกข้อมูลด้วยตนเอง</div>
+
+      <div class="row-2">
+        <div class="field">
+          <label>ชื่อ</label>
+          <input type="text" placeholder="ชื่อจริง">
+        </div>
+        <div class="field">
+          <label>นามสกุล</label>
+          <input type="text" placeholder="นามสกุล">
+        </div>
+      </div>
+      <div class="field">
+        <label>อีเมล</label>
+        <input type="email" placeholder="[email protected]">
+      </div>
+      <div class="field">
+        <label>เบอร์โทรศัพท์</label>
+        <input type="tel" placeholder="0812345678">
+      </div>
+      <div class="row-2">
+        <div class="field">
+          <label>รหัสผ่าน</label>
+          <input type="password" placeholder="••••••••">
+        </div>
+        <div class="field">
+          <label>ยืนยันรหัสผ่าน</label>
+          <input type="password" placeholder="••••••••">
+        </div>
+      </div>
+
+      <label style="display:flex; align-items:flex-start; gap:8px; font-weight:400; font-size:13.5px; color:var(--ink-soft); margin:6px 0 18px;">
+        <input type="checkbox" style="width:auto; margin-top:3px;">
+        ฉันยอมรับ<a href="#" style="color:var(--brown);" onclick="alert('ตัวอย่างการใช้งาน: ระบบจะเปิดหน้าข้อตกลงการใช้งานฉบับเต็ม'); return false;">ข้อตกลงการใช้งาน</a>และ<a href="#" style="color:var(--brown);" onclick="alert('ตัวอย่างการใช้งาน: ระบบจะเปิดหน้านโยบายความเป็นส่วนตัวฉบับเต็ม'); return false;">นโยบายความเป็นส่วนตัว</a>
+      </label>
+
+      <button class="btn btn-primary btn-block">สมัครสมาชิก</button>
+
+      <p style="text-align:center; margin-top:20px; font-size:14px;">
+        มีบัญชีอยู่แล้ว? <a href="login.html" style="color:var(--brown); font-weight:600;">เข้าสู่ระบบ</a>
+      </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

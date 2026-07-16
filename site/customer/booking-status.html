@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ติดตามสถานะซ่อม — อู่ป้าแดงบริการ</title>
+<link rel="stylesheet" href="../shared/style.css">
+<style>
+  .track{ display:flex; align-items:flex-start; gap:0; margin:30px 0; }
+  .track .step{ flex:1; text-align:center; position:relative; }
+  .track .step .circ{
+    width:38px; height:38px; border-radius:50%; background:var(--bg-soft); border:2px solid var(--border);
+    display:flex; align-items:center; justify-content:center; margin:0 auto 10px; font-weight:700; color:var(--ink-faint);
+  }
+  .track .step.done .circ{ background:var(--yellow); border-color:var(--yellow-deep); color:#fff; }
+  .track .step.current .circ{ background:var(--surface); border-color:var(--yellow-deep); color:var(--brown-deep); }
+  .track .step::before{
+    content:""; position:absolute; top:19px; left:-50%; width:100%; height:2px; background:var(--border); z-index:-1;
+  }
+  .track .step:first-child::before{ display:none; }
+  .track .step.done::before{ background:var(--yellow-deep); }
+</style>
+</head>
+<body class="page">
+
+<header class="topnav">
+  <div class="container">
+    <div class="brand"><span class="mark">อู่</span> อู่ป้าแดงบริการ</div>
+    <nav class="navlinks">
+      <a href="index.html">หน้าหลัก</a>
+      <a href="promotions.html">โปรโมชั่น</a>
+      <a href="booking.html">จองคิวซ่อม</a>
+      <a href="products.html">สินค้า</a>
+      <a href="booking-history.html" class="active">ประวัติของฉัน</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="cart.html" class="btn btn-ghost">🛒 ตะกร้า</a>
+      <a href="profile.html" class="avatar">ส</a>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container" style="max-width:760px;">
+    <div class="eyebrow">ใบงาน #BK-2026-00458</div>
+    <h1>ติดตามสถานะการซ่อม</h1>
+    <p>Honda City ปี 2019 · ทะเบียน กข 1234 นครปฐม · เปลี่ยนน้ำมันเครื่อง</p>
+
+    <div class="card" style="margin-top:10px;">
+      <div class="track">
+        <div class="step done"><div class="circ">✓</div>รับเรื่องแล้ว</div>
+        <div class="step done"><div class="circ">✓</div>รอตรวจสอบ</div>
+        <div class="step current"><div class="circ">3</div>กำลังซ่อม</div>
+        <div class="step"><div class="circ">4</div>รอชำระเงิน</div>
+        <div class="step"><div class="circ">5</div>เสร็จสิ้น</div>
+      </div>
+      <hr class="divider">
+      <div class="eyebrow">ช่างผู้รับผิดชอบ</div>
+      <div style="display:flex; align-items:center; gap:12px; margin-top:8px;">
+        <div class="avatar">ช</div>
+        <div>
+          <div style="font-weight:600;">ช่างสมชาย ใจดี</div>
+          <div class="muted">เริ่มดำเนินการเมื่อ 15 ก.ค. 2569 09:10 น.</div>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="eyebrow">หมายเหตุจากช่าง</div>
+      <p>ตรวจพบผ้าเบรกหลังใกล้หมดสภาพ แนะนำให้เปลี่ยนเพิ่มเติม รอลูกค้ายืนยัน</p>
+    </div>
+
+    <div style="display:flex; justify-content:flex-end; gap:12px; margin-top:20px;">
+      <a href="booking-history.html" class="btn btn-outline">กลับไปประวัติการจอง</a>
+      <a href="payment-repair.html" class="btn btn-primary">ไปหน้าชำระเงิน</a>
+    </div>
+  </div>
+</main>
+
+<p class="footer-note">© อู่ป้าแดงบริการ — ระบบจัดการอู่ซ่อมรถ</p>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ใบเสร็จ #PM-00975 — อู่ป้าแดงบริการ</title>
+<link rel="stylesheet" href="../shared/style.css">
+<style>
+  @media print{
+    .topnav, .no-print, .footer-note{ display:none !important; }
+    .main{ padding:0; }
+    body{ background:#fff; color:#222; }
+    h1,h2,h3,h4{ color:#222 !important; }
+    p{ color:#444 !important; }
+    .card, .ticket{ background:#fff !important; border-color:#ddd !important; box-shadow:none !important; }
+    .muted{ color:#666 !important; }
+    th, td{ border-color:#ddd !important; color:#222; }
+    th{ color:#666 !important; }
+  }
+</style>
+</head>
+<body class="page">
+
+<header class="topnav">
+  <div class="container">
+    <div class="brand"><span class="mark">อู่</span> อู่ป้าแดงบริการ</div>
+    <nav class="navlinks">
+      <a href="index.html">หน้าหลัก</a>
+      <a href="promotions.html">โปรโมชั่น</a>
+      <a href="booking.html">จองคิวซ่อม</a>
+      <a href="products.html">สินค้า</a>
+      <a href="booking-history.html" class="active">ประวัติของฉัน</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="cart.html" class="btn btn-ghost">🛒 ตะกร้า</a>
+      <a href="profile.html" class="avatar">ส</a>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container" style="max-width:760px;">
+    <div class="eyebrow">ใบเสร็จรับเงิน</div>
+    <h1>ใบเสร็จ #RC-00975</h1>
+
+    <div class="card" style="margin-top:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+      <div>
+        <div style="font-weight:700; font-family:'Kanit',sans-serif; font-size:18px;">อู่ป้าแดงบริการ</div>
+        <p class="muted" style="margin-top:4px;">99 ถ.สุขสวัสดิ์ นครปฐม 73000</p>
+        <p class="muted">โทร. 081-234-5678</p>
+      </div>
+      <span class="stamp done">ชำระแล้ว</span>
+    </div>
+
+    <div class="ticket" style="margin-top:16px;">
+      <div class="ticket-head">
+        <h3>รายการสินค้า</h3>
+        <div class="muted">Order #OD-2026-01123</div>
+      </div>
+      <div class="ticket-body">
+        <table>
+          <tr><th>สินค้า</th><th>จำนวน</th><th>ราคารวม</th></tr>
+          <tr><td>น้ำมันเครื่องสังเคราะห์แท้ 5W-30</td><td>2</td><td>1,180 บาท</td></tr>
+          <tr><td>ผ้าเบรกหน้า สำหรับรถเก๋ง</td><td>1</td><td>850 บาท</td></tr>
+          <tr><td>ค่าจัดส่ง</td><td>-</td><td>50 บาท</td></tr>
+        </table>
+        <hr class="divider">
+        <div style="display:flex; justify-content:space-between; font-weight:700; font-size:19px; color:var(--brown-deep);">
+          <span>ยอดชำระทั้งหมด</span><span>2,080 บาท</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <div class="eyebrow">ข้อมูลใบเสร็จ</div>
+      <div class="grid grid-2" style="margin-top:10px; gap:14px;">
+        <div><div class="muted">Receipt No.</div><div style="font-weight:600;">#RC-00975</div></div>
+        <div><div class="muted">Payment ID</div><div style="font-weight:600;">#PM-00975</div></div>
+        <div><div class="muted">Order ID</div><div style="font-weight:600;">#OD-2026-01123</div></div>
+        <div><div class="muted">วันที่ชำระเงิน</div><div style="font-weight:600;">8 ก.ค. 2569 14:05 น.</div></div>
+        <div><div class="muted">ช่องทางการชำระเงิน</div><div style="font-weight:600;">🏦 โอนเงินผ่านธนาคาร</div></div>
+        <div><div class="muted">สถานะการชำระเงิน</div><div style="margin-top:4px;"><span class="stamp done">ชำระแล้ว</span></div></div>
+      </div>
+    </div>
+
+    <div class="no-print" style="display:flex; justify-content:flex-end; gap:12px; margin-top:20px; flex-wrap:wrap;">
+      <a href="payment-history.html" class="btn btn-outline">Back</a>
+      <a href="#" class="btn btn-outline" onclick="alert('ตัวอย่างการใช้งาน: ระบบจะดาวน์โหลดใบเสร็จเป็นไฟล์ PDF'); return false;">Download PDF</a>
+      <a href="#" class="btn btn-primary" onclick="window.print(); return false;">Print Receipt</a>
+    </div>
+  </div>
+</main>
+
+<p class="footer-note">© อู่ป้าแดงบริการ — ระบบจัดการอู่ซ่อมรถ</p>
+</body>
+</html>

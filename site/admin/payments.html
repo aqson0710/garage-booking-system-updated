@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>จัดการการชำระเงิน — อู่ป้าแดงบริการ</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">อู่</span> อู่ป้าแดงบริการ</div>
+    <div class="sec-label">ภาพรวม</div>
+    <a href="dashboard.html"><span class="dot"></span> แดชบอร์ด</a>
+    <div class="sec-label">จัดการ</div>
+    <a href="members.html"><span class="dot"></span> สมาชิกและช่าง</a>
+    <a href="bookings.html"><span class="dot"></span> การจอง</a>
+    <a href="services.html"><span class="dot"></span> บริการ</a>
+    <a href="products.html"><span class="dot"></span> สินค้า</a>
+    <a href="promotions.html"><span class="dot"></span> โปรโมชั่น</a>
+    <a href="payments.html" class="active"><span class="dot"></span> การชำระเงิน</a>
+    <div class="sec-label">ข้อมูล</div>
+    <a href="reports.html"><span class="dot"></span> รายงาน</a>
+    <div class="foot">เข้าสู่ระบบในฐานะ<br><strong style="color:#F5E9CF;">ผู้ดูแลระบบ</strong></div>
+  </aside>
+
+  <div class="content">
+    <div class="topbar">
+      <div><div class="eyebrow">การเงิน</div><h2 style="margin-top:2px;">ตรวจสอบการชำระเงิน</h2></div>
+    </div>
+
+    <div class="content-body">
+      <div class="navlinks" style="justify-content:flex-start; gap:6px; margin-bottom:18px; background:var(--surface); display:inline-flex; padding:6px; border-radius:999px; border:1px solid var(--border);">
+        <a href="#" class="active" onclick="this.parentElement.querySelectorAll('a').forEach(a=>a.classList.remove('active'));this.classList.add('active');return false;">รอตรวจสอบ</a>
+        <a href="#" onclick="this.parentElement.querySelectorAll('a').forEach(a=>a.classList.remove('active'));this.classList.add('active');return false;">ชำระแล้ว</a>
+        <a href="#" onclick="this.parentElement.querySelectorAll('a').forEach(a=>a.classList.remove('active'));this.classList.add('active');return false;">ถูกปฏิเสธ</a>
+      </div>
+
+      <div class="grid" style="gap:16px;">
+        <div class="ticket">
+          <div class="ticket-head">
+            <div><div class="eyebrow">#PM-00982 · ค่าซ่อม</div><h3 style="margin-top:2px;">สมชาย ใจดี — 2,200 บาท</h3></div>
+            <span class="stamp review">รอตรวจสอบ</span>
+          </div>
+          <div class="ticket-body" style="display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+            <div>
+              <div class="muted">ช่องทาง: โอนเงินผ่านธนาคาร · แนบสลิปเมื่อ 15 ก.ค. 2569</div>
+              <a href="#" style="color:var(--brown); font-weight:600;" onclick="alert('ตัวอย่างการใช้งาน: ระบบจะเปิดรูปสลิปการโอนเงินที่ลูกค้าแนบมา'); return false;">📎 ดูหลักฐานการโอนเงิน</a>
+            </div>
+            <div style="display:flex; gap:10px;">
+              <button class="btn btn-primary btn-sm">อนุมัติ</button>
+              <button class="btn btn-danger btn-sm">ปฏิเสธ</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="ticket">
+          <div class="ticket-head">
+            <div><div class="eyebrow">#PM-00979 · ค่าสินค้า</div><h3 style="margin-top:2px;">มานี รักดี — 990 บาท</h3></div>
+            <span class="stamp review">รอตรวจสอบ</span>
+          </div>
+          <div class="ticket-body" style="display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
+            <div>
+              <div class="muted">ช่องทาง: โอนเงินผ่านธนาคาร · แนบสลิปเมื่อ 14 ก.ค. 2569</div>
+              <a href="#" style="color:var(--brown); font-weight:600;" onclick="alert('ตัวอย่างการใช้งาน: ระบบจะเปิดรูปสลิปการโอนเงินที่ลูกค้าแนบมา'); return false;">📎 ดูหลักฐานการโอนเงิน</a>
+            </div>
+            <div style="display:flex; gap:10px;">
+              <button class="btn btn-primary btn-sm">อนุมัติ</button>
+              <button class="btn btn-danger btn-sm">ปฏิเสธ</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="ticket">
+          <div class="ticket-head">
+            <div><div class="eyebrow">#PM-00975 · ค่าสินค้า</div><h3 style="margin-top:2px;">สมชาย ใจดี — 2,080 บาท</h3></div>
+            <span class="stamp done">ชำระแล้ว</span>
+          </div>
+          <div class="ticket-body">
+            <div class="muted">ช่องทาง: โอนเงินผ่านธนาคาร · อนุมัติเมื่อ 8 ก.ค. 2569 โดยผู้ดูแลระบบ</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

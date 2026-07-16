@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>คิวงานของฉัน — ช่างซ่อม</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">อู่</span> อู่ป้าแดงบริการ</div>
+    <div class="sec-label">เมนูช่าง</div>
+    <a href="dashboard.html"><span class="dot"></span> งานที่ได้รับมอบหมาย</a>
+    <a href="queue.html" class="active"><span class="dot"></span> คิวงานของฉัน</a>
+    <div class="foot">เข้าสู่ระบบในฐานะ<br><strong style="color:#F5E9CF;">ช่างสมชาย ใจดี</strong></div>
+  </aside>
+
+  <div class="content">
+    <div class="topbar">
+      <div>
+        <div class="eyebrow">ตารางงาน</div>
+        <h2 style="margin-top:2px;">คิวงานของฉันวันนี้</h2>
+      </div>
+      <input type="date" value="2026-07-15" style="width:auto;">
+    </div>
+
+    <div class="content-body">
+      <div class="table-wrap">
+        <table>
+          <tr><th>เวลา</th><th>ลูกค้า / รถ</th><th>บริการ</th><th>สถานะ</th><th></th></tr>
+          <tr>
+            <td>09:00 น.</td>
+            <td>สมชาย ใจดี — Honda City</td>
+            <td>เปลี่ยนน้ำมันเครื่อง</td>
+            <td><span class="stamp progress">กำลังซ่อม</span></td>
+            <td><a href="job-detail.html" class="btn btn-outline btn-sm">เปิดงาน</a></td>
+          </tr>
+          <tr>
+            <td>13:00 น.</td>
+            <td>มานี รักดี — Toyota Yaris</td>
+            <td>ตรวจเช็กทั่วไป</td>
+            <td><span class="stamp pending">รอตรวจสอบ</span></td>
+            <td><a href="job-detail.html" class="btn btn-outline btn-sm">เริ่มงาน</a></td>
+          </tr>
+          <tr>
+            <td>14:00 น.</td>
+            <td>วิชัย ทองดี — Yamaha Fino</td>
+            <td>เปลี่ยนแบตเตอรี่</td>
+            <td><span class="stamp review">รอชำระเงิน</span></td>
+            <td><a href="job-detail.html" class="btn btn-outline btn-sm">เปิดงาน</a></td>
+          </tr>
+          <tr>
+            <td>16:00 น.</td>
+            <td>อรทัย พงษ์ไทย — Isuzu D-Max</td>
+            <td>ซ่อมเบรก</td>
+            <td><span class="stamp pending">รอตรวจสอบ</span></td>
+            <td><a href="job-detail.html" class="btn btn-outline btn-sm">เริ่มงาน</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

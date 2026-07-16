@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>จัดการการจอง — อู่ป้าแดงบริการ</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">อู่</span> อู่ป้าแดงบริการ</div>
+    <div class="sec-label">ภาพรวม</div>
+    <a href="dashboard.html"><span class="dot"></span> แดชบอร์ด</a>
+    <div class="sec-label">จัดการ</div>
+    <a href="members.html"><span class="dot"></span> สมาชิกและช่าง</a>
+    <a href="bookings.html" class="active"><span class="dot"></span> การจอง</a>
+    <a href="services.html"><span class="dot"></span> บริการ</a>
+    <a href="products.html"><span class="dot"></span> สินค้า</a>
+    <a href="promotions.html"><span class="dot"></span> โปรโมชั่น</a>
+    <a href="payments.html"><span class="dot"></span> การชำระเงิน</a>
+    <div class="sec-label">ข้อมูล</div>
+    <a href="reports.html"><span class="dot"></span> รายงาน</a>
+    <div class="foot">เข้าสู่ระบบในฐานะ<br><strong style="color:#F5E9CF;">ผู้ดูแลระบบ</strong></div>
+  </aside>
+
+  <div class="content">
+    <div class="topbar">
+      <div><div class="eyebrow">จัดการคิวซ่อม</div><h2 style="margin-top:2px;">การจองทั้งหมด</h2></div>
+      <input type="date" value="2026-07-15" style="width:auto;">
+    </div>
+
+    <div class="content-body">
+      <div class="navlinks" style="justify-content:flex-start; gap:6px; margin-bottom:18px; background:var(--surface); display:inline-flex; padding:6px; border-radius:999px; border:1px solid var(--border);">
+        <a href="#" class="active" onclick="this.parentElement.querySelectorAll('a').forEach(a=>a.classList.remove('active'));this.classList.add('active');return false;">ทั้งหมด</a>
+        <a href="#" onclick="this.parentElement.querySelectorAll('a').forEach(a=>a.classList.remove('active'));this.classList.add('active');return false;">รอยืนยัน</a>
+        <a href="#" onclick="this.parentElement.querySelectorAll('a').forEach(a=>a.classList.remove('active'));this.classList.add('active');return false;">กำลังซ่อม</a>
+        <a href="#" onclick="this.parentElement.querySelectorAll('a').forEach(a=>a.classList.remove('active'));this.classList.add('active');return false;">เสร็จสิ้น</a>
+        <a href="#" onclick="this.parentElement.querySelectorAll('a').forEach(a=>a.classList.remove('active'));this.classList.add('active');return false;">ยกเลิก</a>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <tr><th>รหัส</th><th>ลูกค้า / รถ</th><th>บริการ</th><th>วัน-เวลา</th><th>ช่างที่มอบหมาย</th><th>สถานะ</th><th></th></tr>
+          <tr>
+            <td>#00461</td><td>อรทัย พงษ์ไทย — Isuzu D-Max</td><td>ซ่อมเบรก</td><td>15 ก.ค. 16:00 น.</td>
+            <td>—</td>
+            <td><span class="stamp pending">รอยืนยัน</span></td>
+            <td><button class="btn btn-primary btn-sm">ยืนยัน</button> <button class="btn btn-danger btn-sm">ยกเลิก</button></td>
+          </tr>
+          <tr>
+            <td>#00460</td><td>มานี รักดี — Toyota Yaris</td><td>ตรวจเช็กทั่วไป</td><td>15 ก.ค. 13:00 น.</td>
+            <td>ช่างสมชาย</td>
+            <td><span class="stamp progress">กำลังซ่อม</span></td>
+            <td><button class="btn btn-outline btn-sm">เปลี่ยนช่าง</button></td>
+          </tr>
+          <tr>
+            <td>#00458</td><td>สมชาย ใจดี — Honda City</td><td>เปลี่ยนน้ำมันเครื่อง</td><td>15 ก.ค. 09:00 น.</td>
+            <td>ช่างสมชาย</td>
+            <td><span class="stamp progress">กำลังซ่อม</span></td>
+            <td><button class="btn btn-outline btn-sm">เปลี่ยนช่าง</button></td>
+          </tr>
+          <tr>
+            <td>#00441</td><td>วิชัย ทองดี — Yamaha Fino</td><td>เปลี่ยนแบตเตอรี่</td><td>10 ก.ค. 16:00 น.</td>
+            <td>ช่างประยุทธ</td>
+            <td><span class="stamp done">เสร็จสิ้น</span></td>
+            <td><button class="btn btn-outline btn-sm">ดูรายละเอียด</button></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card" style="margin-top:24px; max-width:520px;">
+        <h3>มอบหมายงานให้ช่าง</h3>
+        <div class="field" style="margin-top:10px;"><label>เลือกการจอง</label><input type="text" value="#00461 — ซ่อมเบรก" readonly></div>
+        <div class="field">
+          <label>เลือกช่างผู้รับผิดชอบ</label>
+          <select><option>ช่างสมชาย ใจดี</option><option>ช่างประยุทธ มั่นคง</option></select>
+        </div>
+        <button class="btn btn-primary">มอบหมายงาน</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

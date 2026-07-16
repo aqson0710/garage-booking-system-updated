@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>จัดการบริการ — อู่ป้าแดงบริการ</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">อู่</span> อู่ป้าแดงบริการ</div>
+    <div class="sec-label">ภาพรวม</div>
+    <a href="dashboard.html"><span class="dot"></span> แดชบอร์ด</a>
+    <div class="sec-label">จัดการ</div>
+    <a href="members.html"><span class="dot"></span> สมาชิกและช่าง</a>
+    <a href="bookings.html"><span class="dot"></span> การจอง</a>
+    <a href="services.html" class="active"><span class="dot"></span> บริการ</a>
+    <a href="products.html"><span class="dot"></span> สินค้า</a>
+    <a href="promotions.html"><span class="dot"></span> โปรโมชั่น</a>
+    <a href="payments.html"><span class="dot"></span> การชำระเงิน</a>
+    <div class="sec-label">ข้อมูล</div>
+    <a href="reports.html"><span class="dot"></span> รายงาน</a>
+    <div class="foot">เข้าสู่ระบบในฐานะ<br><strong style="color:#F5E9CF;">ผู้ดูแลระบบ</strong></div>
+  </aside>
+
+  <div class="content">
+    <div class="topbar">
+      <div><div class="eyebrow">จัดการรายการบริการ</div><h2 style="margin-top:2px;">ประเภทบริการและราคา</h2></div>
+      <button class="btn btn-primary">+ เพิ่มบริการใหม่</button>
+    </div>
+
+    <div class="content-body">
+      <div class="table-wrap">
+        <table>
+          <tr><th>บริการ</th><th>หมวดหมู่</th><th>ค่าแรงเริ่มต้น</th><th>ระยะเวลาโดยประมาณ</th><th>สถานะ</th><th></th></tr>
+          <tr><td>เปลี่ยนน้ำมันเครื่อง</td><td>บำรุงรักษา</td><td>150 บาท</td><td>30 นาที</td><td><span class="badge">เปิดใช้งาน</span></td>
+            <td><button class="btn btn-outline btn-sm">แก้ไข</button> <button class="btn btn-ghost btn-sm">ลบ</button></td></tr>
+          <tr><td>เปลี่ยนยาง</td><td>ช่วงล่าง</td><td>100 บาท / เส้น</td><td>45 นาที</td><td><span class="badge">เปิดใช้งาน</span></td>
+            <td><button class="btn btn-outline btn-sm">แก้ไข</button> <button class="btn btn-ghost btn-sm">ลบ</button></td></tr>
+          <tr><td>ตรวจเช็กทั่วไป</td><td>ตรวจเช็ก</td><td>200 บาท</td><td>40 นาที</td><td><span class="badge">เปิดใช้งาน</span></td>
+            <td><button class="btn btn-outline btn-sm">แก้ไข</button> <button class="btn btn-ghost btn-sm">ลบ</button></td></tr>
+          <tr><td>เปลี่ยนแบตเตอรี่</td><td>ไฟฟ้า</td><td>100 บาท</td><td>20 นาที</td><td><span class="badge">เปิดใช้งาน</span></td>
+            <td><button class="btn btn-outline btn-sm">แก้ไข</button> <button class="btn btn-ghost btn-sm">ลบ</button></td></tr>
+          <tr><td>ซ่อมเบรก</td><td>เบรก</td><td>250 บาท</td><td>60 นาที</td><td><span class="badge">เปิดใช้งาน</span></td>
+            <td><button class="btn btn-outline btn-sm">แก้ไข</button> <button class="btn btn-ghost btn-sm">ลบ</button></td></tr>
+        </table>
+      </div>
+
+      <div class="card" style="margin-top:24px; max-width:560px;">
+        <h3>เพิ่ม / แก้ไขบริการ</h3>
+        <div class="row-2" style="margin-top:12px;">
+          <div class="field"><label>ชื่อบริการ</label><input type="text" placeholder="เช่น เปลี่ยนโช้คอัพ"></div>
+          <div class="field">
+            <label>หมวดหมู่</label>
+            <select><option>บำรุงรักษา</option><option>ช่วงล่าง</option><option>เบรก</option><option>ไฟฟ้า</option><option>ตรวจเช็ก</option></select>
+          </div>
+        </div>
+        <div class="row-2">
+          <div class="field"><label>ค่าแรงเริ่มต้น (บาท)</label><input type="number" placeholder="0"></div>
+          <div class="field"><label>ระยะเวลาโดยประมาณ (นาที)</label><input type="number" placeholder="0"></div>
+        </div>
+        <button class="btn btn-primary">บันทึกบริการ</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

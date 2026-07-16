@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>จัดการโปรโมชั่น — อู่ป้าแดงบริการ</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">อู่</span> อู่ป้าแดงบริการ</div>
+    <div class="sec-label">ภาพรวม</div>
+    <a href="dashboard.html"><span class="dot"></span> แดชบอร์ด</a>
+    <div class="sec-label">จัดการ</div>
+    <a href="members.html"><span class="dot"></span> สมาชิกและช่าง</a>
+    <a href="bookings.html"><span class="dot"></span> การจอง</a>
+    <a href="services.html"><span class="dot"></span> บริการ</a>
+    <a href="products.html"><span class="dot"></span> สินค้า</a>
+    <a href="promotions.html" class="active"><span class="dot"></span> โปรโมชั่น</a>
+    <a href="payments.html"><span class="dot"></span> การชำระเงิน</a>
+    <div class="sec-label">ข้อมูล</div>
+    <a href="reports.html"><span class="dot"></span> รายงาน</a>
+    <div class="foot">เข้าสู่ระบบในฐานะ<br><strong style="color:#F5E9CF;">ผู้ดูแลระบบ</strong></div>
+  </aside>
+
+  <div class="content">
+    <div class="topbar">
+      <div><div class="eyebrow">การตลาด</div><h2 style="margin-top:2px;">จัดการโปรโมชั่น</h2></div>
+      <button class="btn btn-primary">+ สร้างโปรโมชั่นใหม่</button>
+    </div>
+
+    <div class="content-body">
+      <div class="table-wrap">
+        <table>
+          <tr><th>ชื่อโปรโมชั่น</th><th>ประเภท</th><th>ส่วนลด</th><th>ระยะเวลา</th><th>สถานะ</th><th></th></tr>
+          <tr><td>เปลี่ยนน้ำมันเครื่อง ลด 20%</td><td>บริการ</td><td>20%</td><td>1–31 ก.ค. 2569</td><td><span class="badge">กำลังใช้งาน</span></td>
+            <td><button class="btn btn-outline btn-sm">แก้ไข</button> <button class="btn btn-ghost btn-sm">ลบ</button></td></tr>
+          <tr><td>ยางรถยนต์ ซื้อ 3 แถม 1</td><td>สินค้า</td><td>แถม 1 เส้น</td><td>1 ก.ค.–15 ส.ค. 2569</td><td><span class="badge">กำลังใช้งาน</span></td>
+            <td><button class="btn btn-outline btn-sm">แก้ไข</button> <button class="btn btn-ghost btn-sm">ลบ</button></td></tr>
+          <tr><td>สมัครสมาชิกใหม่ลด 100 บาท</td><td>สมาชิกใหม่</td><td>100 บาท</td><td>ไม่มีกำหนด</td><td><span class="badge">กำลังใช้งาน</span></td>
+            <td><button class="btn btn-outline btn-sm">แก้ไข</button> <button class="btn btn-ghost btn-sm">ลบ</button></td></tr>
+          <tr><td>เปลี่ยนยาง ลด 10% (สิ้นสุดแล้ว)</td><td>บริการ</td><td>10%</td><td>1–30 เม.ย. 2569</td>
+            <td><span class="badge" style="background:var(--st-cancel-bg); color:var(--st-cancel-ink);">สิ้นสุดแล้ว</span></td>
+            <td><button class="btn btn-outline btn-sm">ดู</button></td></tr>
+        </table>
+      </div>
+
+      <div class="card" style="margin-top:24px; max-width:600px;">
+        <h3>เพิ่ม / แก้ไขโปรโมชั่น</h3>
+        <div class="field" style="margin-top:12px;"><label>ชื่อโปรโมชั่น</label><input type="text" placeholder="เช่น ลดค่าแรงตรวจเช็ก 15%"></div>
+        <div class="row-2">
+          <div class="field"><label>ประเภท</label><select><option>บริการ</option><option>สินค้า</option><option>สมาชิกใหม่</option></select></div>
+          <div class="field"><label>ส่วนลด</label><input type="text" placeholder="เช่น 15% หรือ 100 บาท"></div>
+        </div>
+        <div class="row-2">
+          <div class="field"><label>วันที่เริ่มต้น</label><input type="date"></div>
+          <div class="field"><label>วันที่สิ้นสุด</label><input type="date"></div>
+        </div>
+        <div class="field"><label>รายละเอียดเพิ่มเติม</label><textarea placeholder="เงื่อนไขของโปรโมชั่น"></textarea></div>
+        <button class="btn btn-primary">บันทึกโปรโมชั่น</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

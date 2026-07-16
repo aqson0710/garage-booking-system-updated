@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>จองคิวซ่อม — อู่ป้าแดงบริการ</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body class="page">
+
+<header class="topnav">
+  <div class="container">
+    <div class="brand"><span class="mark">อู่</span> อู่ป้าแดงบริการ</div>
+    <nav class="navlinks">
+      <a href="index.html">หน้าหลัก</a>
+      <a href="promotions.html">โปรโมชั่น</a>
+      <a href="booking.html" class="active">จองคิวซ่อม</a>
+      <a href="products.html">สินค้า</a>
+      <a href="booking-history.html">ประวัติของฉัน</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="cart.html" class="btn btn-ghost">🛒 ตะกร้า</a>
+      <a href="profile.html" class="avatar">ส</a>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container" style="max-width:880px;">
+    <div class="eyebrow">ขั้นตอนที่ 1 จาก 2</div>
+    <h1>จองคิวเข้ารับบริการ</h1>
+    <p>เลือกรถ บริการ วันเวลาที่สะดวก และรายละเอียดอาการเสีย</p>
+
+    <div class="card" style="margin-top:22px;">
+      <h3>เลือกรถของคุณ</h3>
+      <div class="field">
+        <select>
+          <option>Honda City ปี 2019 — ทะเบียน กข 1234 นครปฐม</option>
+          <option>Yamaha Fino ปี 2021 — ทะเบียน 1กก 5678 นครปฐม</option>
+          <option>+ เพิ่มรถคันใหม่</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px;">
+      <h3>เลือกบริการที่ต้องการ</h3>
+      <div class="chip-group" style="margin-top:10px;">
+        <div class="chip selected">🛢️ เปลี่ยนน้ำมันเครื่อง</div>
+        <div class="chip">🛞 เปลี่ยนยาง</div>
+        <div class="chip">🔍 ตรวจเช็กทั่วไป</div>
+        <div class="chip">🔋 เปลี่ยนแบตเตอรี่</div>
+        <div class="chip">🛠️ ซ่อมเบรก</div>
+        <div class="chip">➕ บริการอื่น ๆ</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px;">
+      <h3>เลือกวันที่และเวลา</h3>
+      <div class="field" style="margin-top:12px;">
+        <label>วันที่ต้องการเข้ารับบริการ</label>
+        <input type="date" value="2026-07-15">
+      </div>
+      <label>ช่วงเวลาที่ว่าง</label>
+      <div class="slot-grid">
+        <div class="slot selected">09:00</div>
+        <div class="slot">10:00</div>
+        <div class="slot full">11:00<br><span style="font-size:11px;">เต็ม</span></div>
+        <div class="slot">13:00</div>
+        <div class="slot">14:00</div>
+        <div class="slot full">15:00<br><span style="font-size:11px;">เต็ม</span></div>
+        <div class="slot">16:00</div>
+        <div class="slot">17:00</div>
+      </div>
+      <p class="hint">* แต่ละช่วงเวลารับได้สูงสุด 3 คิว ระบบจะแจ้งเตือนหากคุณมีคิวซ้ำในวันเดียวกัน</p>
+    </div>
+
+    <div class="card" style="margin-top:18px;">
+      <h3>รายละเอียดอาการ / ปัญหาของรถ</h3>
+      <div class="field" style="margin-top:12px;">
+        <textarea placeholder="เช่น มีเสียงดังตอนเบรก, เครื่องยนต์สั่นตอนติดเครื่อง ฯลฯ"></textarea>
+      </div>
+      <div class="field">
+        <label>แนบรูปภาพเพิ่มเติม (ถ้ามี)</label>
+        <input type="file">
+      </div>
+    </div>
+
+    <div style="display:flex; justify-content:flex-end; gap:12px; margin-top:24px;">
+      <a href="index.html" class="btn btn-outline">ยกเลิก</a>
+      <a href="booking-confirm.html" class="btn btn-primary">ถัดไป: ตรวจสอบข้อมูล</a>
+    </div>
+  </div>
+</main>
+
+<p class="footer-note">© อู่ป้าแดงบริการ — ระบบจัดการอู่ซ่อมรถ</p>
+</body>
+</html>

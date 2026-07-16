@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>แดชบอร์ดผู้ดูแลระบบ — อู่ป้าแดงบริการ</title>
+<link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="mark">อู่</span> อู่ป้าแดงบริการ</div>
+    <div class="sec-label">ภาพรวม</div>
+    <a href="dashboard.html" class="active"><span class="dot"></span> แดชบอร์ด</a>
+    <div class="sec-label">จัดการ</div>
+    <a href="members.html"><span class="dot"></span> สมาชิกและช่าง</a>
+    <a href="bookings.html"><span class="dot"></span> การจอง</a>
+    <a href="services.html"><span class="dot"></span> บริการ</a>
+    <a href="products.html"><span class="dot"></span> สินค้า</a>
+    <a href="promotions.html"><span class="dot"></span> โปรโมชั่น</a>
+    <a href="payments.html"><span class="dot"></span> การชำระเงิน</a>
+    <div class="sec-label">ข้อมูล</div>
+    <a href="reports.html"><span class="dot"></span> รายงาน</a>
+    <div class="foot">เข้าสู่ระบบในฐานะ<br><strong style="color:#F5E9CF;">ผู้ดูแลระบบ</strong></div>
+  </aside>
+
+  <div class="content">
+    <div class="topbar">
+      <div><div class="eyebrow">ภาพรวมระบบ</div><h2 style="margin-top:2px;">แดชบอร์ดผู้ดูแลระบบ</h2></div>
+      <div class="avatar">A</div>
+    </div>
+
+    <div class="content-body">
+      <div class="grid grid-4">
+        <div class="card stat"><div class="num">128</div><div class="lbl">สมาชิกทั้งหมด</div></div>
+        <div class="card stat"><div class="num">14</div><div class="lbl">การจองวันนี้</div></div>
+        <div class="card stat"><div class="num">6</div><div class="lbl">รอตรวจสอบชำระเงิน</div></div>
+        <div class="card stat"><div class="num">฿86,400</div><div class="lbl">รายได้เดือนนี้</div></div>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:24px; align-items:flex-start;">
+        <div class="card">
+          <div class="section-title"><h3>การจองล่าสุด</h3><a href="bookings.html" class="muted">ดูทั้งหมด →</a></div>
+          <table>
+            <tr><th>รหัส</th><th>ลูกค้า</th><th>บริการ</th><th>สถานะ</th></tr>
+            <tr><td>#00461</td><td>อรทัย พงษ์ไทย</td><td>ซ่อมเบรก</td><td><span class="stamp pending">รอยืนยัน</span></td></tr>
+            <tr><td>#00460</td><td>มานี รักดี</td><td>ตรวจเช็กทั่วไป</td><td><span class="stamp progress">กำลังซ่อม</span></td></tr>
+            <tr><td>#00458</td><td>สมชาย ใจดี</td><td>เปลี่ยนน้ำมันเครื่อง</td><td><span class="stamp progress">กำลังซ่อม</span></td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <div class="section-title"><h3>รอตรวจสอบการชำระเงิน</h3><a href="payments.html" class="muted">ดูทั้งหมด →</a></div>
+          <table>
+            <tr><th>รหัส</th><th>ประเภท</th><th>ยอด</th><th></th></tr>
+            <tr><td>#PM-00982</td><td>ค่าซ่อม</td><td>2,200 บาท</td><td><button class="btn btn-outline btn-sm">ตรวจสอบ</button></td></tr>
+            <tr><td>#PM-00979</td><td>ค่าสินค้า</td><td>990 บาท</td><td><button class="btn btn-outline btn-sm">ตรวจสอบ</button></td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
